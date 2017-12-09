@@ -3,11 +3,21 @@
 * Override Pages default styles or create your own styles here
 
 */
-body,
-p {
+.footer {
   color: #fff;
 }
 .page-container {
   padding-left: 0;
-  background-color: #000;
+}
+.home {
+  margin-top: 20vh;
+}
+.home .logo-img {
+  max-width: 50vw;
+}
+.home .title-img {
+  max-width: 70vw;
+}
+.home img {
+  margin: 0 auto;
 }
