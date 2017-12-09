@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Login from '@/components/Login'
 import UserCreate from '@/components/UserCreate'
 import Village from '@/components/Village'
+import Store from '@/components/Store'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/village',
       name: 'Village',
       component: Village
+    },
+    {
+      path: '/store',
+      name: 'Store',
+      component: Store
     }
   ]
 })
