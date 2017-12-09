@@ -1,0 +1,75 @@
+/*
+
+* Override Pages default styles or create your own styles here
+
+*/
+
+.footer {
+  color: #FAFAFA;
+}
+
+.page-container {
+  padding-left: 0;
+}
+
+.home {
+  margin-top: 20vh;
+
+  .logo-img {
+    max-width: 50vw;
+  }
+
+  .title-img {
+    max-width: 70vw;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.village {
+  background: url('/src/assets/village/bg.png') center center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+
+  .village-header {
+    color: #FAFAFA;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .village-npc {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+
+  .village-buttons {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+
+    .village-button {
+      background-color: #2B6A94;
+      list-style: none;
+      margin-bottom: 30px;
+      padding: 5px;
+      border-radius: 30px 0 0 30px;
+
+      a {
+        font-size: 16px;
+        color: #FAFAFA;
+      }
+    }
+  }
+
+  .village-book {
+    width: 30px;
+    height: 30px;
+    background: #3C93CE url(../village/book.png) center center no-repeat;
+    background-size: 80%;
+    border-radius: 100%;
+  }
+}
