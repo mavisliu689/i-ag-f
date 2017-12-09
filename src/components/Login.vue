@@ -3,7 +3,7 @@
         <div class="container">
             <div class="login-container bg-white">
                 <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 p-b-50 m-b-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-                    <p class="p-t-35">Sign into your pages account</p>
+                    <p class="p-t-35">Sign into your account</p>
                     <!-- START Login Form -->
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
@@ -31,38 +31,21 @@
 </template>
 
 <script>
-    export default {
-        name: 'Login',
-        data() {
-            return {
-                msg: 'Login'
-            }
-        },
-        methods: {
-            checkLogin() {
-                this.$router.push('/user_create')
-            }
-        }
+  export default {
+    name: 'Login',
+    data () {
+      return {
+        msg: 'Login'
+      }
+    },
+    methods: {
+      checkLogin () {
+        this.$router.push('/user-create')
+      }
     }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    h1, h2 {
-        font-weight: normal;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
-    }
 </style>
