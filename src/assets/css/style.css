@@ -3,6 +3,11 @@
 * Override Pages default styles or create your own styles here
 
 */
+body,
+p {
+  color: #fff;
+}
 .page-container {
   padding-left: 0;
+  background-color: #000;
 }
