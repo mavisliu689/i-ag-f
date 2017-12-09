@@ -4,8 +4,9 @@
         <!-- START PAGE CONTENT -->
         <div class="content ">
             <!-- START CONTAINER FLUID -->
-            <div class="container-fluid container-fixed-lg">
+            <div class="container container-fixed-lg">
                 <!-- BEGIN PlACE PAGE CONTENT HERE -->
+
                 <div class="register-container full-height sm-p-t-30 bg-white">
                     <div class="container-sm-height full-height">
                         <div class="row row-sm-height">
@@ -83,6 +84,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- END PLACE PAGE CONTENT HERE -->
             </div>
             <!-- END CONTAINER FLUID -->

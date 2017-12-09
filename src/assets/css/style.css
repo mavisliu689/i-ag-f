@@ -9,10 +9,8 @@
 .page-container {
   padding-left: 0;
 }
-.home {
-  margin-top: 20vh;
-}
 .home .logo-img {
+  margin-top: 20vh;
   max-width: 50vw;
 }
 .home .title-img {
