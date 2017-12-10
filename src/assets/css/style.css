@@ -58,10 +58,13 @@
   color: #FAFAFA;
   width: 100%;
 }
+.village .village-buttons .village-button .col-xs-8 {
+  padding-top: 3px;
+}
 .village .village-services {
   position: absolute;
   left: 0;
-  top: 100px;
+  top: 130px;
   width: 130px;
 }
 .village .village-services .village-service {
@@ -76,6 +79,9 @@
   color: #FAFAFA;
   width: 100%;
 }
+.village .village-services .village-service .col-xs-8 {
+  padding-top: 3px;
+}
 .village .village-book {
   width: 30px;
   height: 30px;
@@ -88,7 +94,7 @@
   position: absolute;
   right: 0;
   top: 130px;
-  height: 230px;
+  height: 250px;
   overflow: auto;
 }
 .village .store .store-item {

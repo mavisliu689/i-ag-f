@@ -8,19 +8,23 @@
                         <div class="account">
                             <div class="row">
                                 <div class="col-xs-6">
-                                    <img src="src/assets/village/avatar.png" alt="avatar" class="img-responsive avatar-img">
+                                    <div class="row">
+                                        <img src="src/assets/village/avatar.png" alt="avatar" class="img-responsive avatar-img">
+                                    </div>
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-6 p-t-20">
                                     <div class="name">Mavis</div>
                                     <div class="level">LV. 1</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-7">
+                    <div class="col-xs-7 p-t-20">
                         <div class="row">
                             <div class="col-xs-6">
-                                二月 十一
+                                <div class="row">
+                                    二月 十一
+                                </div>
                             </div>
                             <div class="col-xs-6">
                                 大寒
@@ -29,8 +33,10 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-6">
-                                <img src="src/assets/village/weather.png" alt="weather" class="pull-left" width="30px">
-                                南投縣
+                                <div class="row">
+                                    <img src="src/assets/village/weather.png" alt="weather" class="pull-left" width="30px">
+                                    南投縣
+                                </div>
                             </div>
                             <div class="col-xs-6">
                                 農地編號
