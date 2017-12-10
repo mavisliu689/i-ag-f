@@ -49,7 +49,12 @@
         </div>
         <div class="video">
             <div class="container">
-
+                <p>
+                    請洽各地區農委會：
+                    <a href="http://www.nthfa.org.tw/" target="_blank">
+                        <img src="src/assets/village/nthfa.jpg" alt="" class="img-responsive">
+                    </a>
+                </p>
             </div>
         </div>
         <div class="village-npc">

@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="row store-item" v-for="(land, index) in lands">
                     <div class="col-xs-4">
-                        <img src="src/assets/village/land.png" alt="land" class="img-responsive">
+                        <img :src="'src/assets/village/land' + index + '.jpg'" alt="land" class="img-responsive">
                     </div>
                     <div class="col-xs-8">
                         <div class="row">
@@ -88,29 +88,19 @@
       return {
         lands: {
           '1': {
-            'name': '竹山山坡地1',
+            'name': '(租)竹山山坡地',
             'ping': '1435坪',
             'price': '6萬/坪'
           },
           '2': {
-            'name': '竹山山坡地2',
-            'ping': '1435坪',
-            'price': '6萬/坪'
+            'name': '(租)集集山坡地',
+            'ping': '392坪',
+            'price': '0.13萬/坪'
           },
           '3': {
-            'name': '竹山山坡地3',
-            'ping': '1435坪',
-            'price': '6萬/坪'
-          },
-          '4': {
-            'name': '竹山山坡地4',
-            'ping': '1435坪',
-            'price': '6萬/坪'
-          },
-          '5': {
-            'name': '竹山山坡地5',
-            'ping': '1435坪',
-            'price': '6萬/坪'
+            'name': '(售)草屯(雙冬桂花園)',
+            'ping': '267.2坪',
+            'price': '430萬'
           }
         }
       }

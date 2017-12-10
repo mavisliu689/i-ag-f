@@ -125,7 +125,7 @@ p {
   border-radius: 10px 0 0 10px;
 }
 .village .store .store-item .name {
-  font-size: 24px;
+  font-size: 20px;
 }
 .village .store .store-item .info {
   font-size: 16px;
@@ -139,13 +139,13 @@ p {
 .village .store .fertilizer-item .fertilizer-name {
   background-color: #2B6A94;
   border-radius: 10px 0 0 10px;
-  padding: 15px;
-  font-size: 26px;
+  padding: 10px 15px;
+  font-size: 20px;
   color: #FAFAFA;
 }
 .village .store .fertilizer-item .fertilizer-phone {
-  font-size: 20px;
-  padding: 10px 0 0;
+  font-size: 16px;
+  padding: 5px 0 0;
   color: #0A0A0A;
 }
 .village .video {
@@ -155,6 +155,7 @@ p {
   padding: 80px 20px 0;
   background: url("../village/video-bg.png") center center no-repeat;
   background-size: contain;
+  position: relative;
 }
 .village .intro {
   padding: 0 50px 0 150px;

@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="row store-item" v-for="(seedling, index) in seedlings">
                     <div class="col-xs-4">
-                        <img src="src/assets/village/seedling.jpg" alt="seedling" class="img-responsive" height="60">
+                        <img :src="'src/assets/village/seedling' + index + '.jpg'" alt="seedling" class="img-responsive" height="60">
                     </div>
                     <div class="col-xs-8">
                         <div class="row">
@@ -59,7 +59,7 @@
                                 {{ seedling.name }}
                             </div>
                             <div class="info p-t-10">
-                                {{ seedling.cycle }} / {{ seedling.period }}
+                                週期:{{ seedling.cycle }} / 栽種:{{ seedling.period }}
                             </div>
                         </div>
                     </div>
@@ -81,29 +81,19 @@
       return {
         seedlings: {
           '1': {
-            'name': '小白菜1',
-            'cycle': '農作物週期',
-            'period': '建議播種期'
+            'name': '青江菜',
+            'cycle': '一個月',
+            'period': '10~12月'
           },
           '2': {
-            'name': '小白菜2',
-            'cycle': '農作物週期',
-            'period': '建議播種期'
+            'name': '小白菜',
+            'cycle': '40天',
+            'period': '春秋季'
           },
           '3': {
-            'name': '小白菜3',
-            'cycle': '農作物週期',
-            'period': '建議播種期'
-          },
-          '4': {
-            'name': '小白菜4',
-            'cycle': '農作物週期',
-            'period': '建議播種期'
-          },
-          '5': {
-            'name': '小白菜5',
-            'cycle': '農作物週期',
-            'period': '建議播種期'
+            'name': '油菜',
+            'cycle': '50天',
+            'period': '8~10月'
           }
         }
       }
