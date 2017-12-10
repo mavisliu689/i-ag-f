@@ -8,6 +8,8 @@ import Store from '@/components/Store'
 import Land from '@/components/Land'
 import Seedling from '@/components/Seedling'
 import Fertilizer from '@/components/Fertilizer'
+import Machine from '@/components/Machine'
+import Shipping from '@/components/Shipping'
 
 Vue.use(Router)
 
@@ -52,6 +54,16 @@ export default new Router({
       path: '/fertilizer',
       name: 'Fertilizer',
       component: Fertilizer
+    },
+    {
+      path: '/machine',
+      name: 'Machine',
+      component: Machine
+    },
+    {
+      path: '/shipping',
+      name: 'Shipping',
+      component: Shipping
     }
   ]
 })
