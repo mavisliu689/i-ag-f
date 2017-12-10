@@ -10,6 +10,7 @@ import Seedling from '@/components/Seedling'
 import Fertilizer from '@/components/Fertilizer'
 import Machine from '@/components/Machine'
 import Shipping from '@/components/Shipping'
+import Normal from '@/components/Normal'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/shipping',
       name: 'Shipping',
       component: Shipping
+    },
+    {
+      path: '/normal',
+      name: 'Normal',
+      component: Normal
     }
   ]
 })
