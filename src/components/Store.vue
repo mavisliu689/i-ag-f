@@ -47,7 +47,23 @@
             </div>
         </div>
         <div class="village-npc">
-            <img src="src/assets/village/npc.png" alt="npc">
+            <img src="src/assets/village/store-npc.png" alt="npc">
+        </div>
+        <div class="village-services">
+            <ul class="list-unstyled container-fluid">
+                <li v-for="(service, index) in services" class="village-service row">
+                    <router-link :to="'/' + index">
+                        <div class="col-xs-8">
+                            {{ service }}
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="row">
+                                <div class="village-book pull-right"></div>
+                            </div>
+                        </div>
+                    </router-link>
+                </li>
+            </ul>
         </div>
         <div class="village-buttons">
             <ul class="list-unstyled container-fluid">
@@ -65,6 +81,7 @@
                 </li>
             </ul>
         </div>
+        <router-link to="/village" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -75,9 +92,15 @@
     data () {
       return {
         buttons: {
-          'emergency': '緊急任務',
-          'normal': '一般任務',
-          'store': '商城銀行'
+          'land': '土地購買',
+          'seedling': '種苗場',
+          'fertilizer': '肥藥農藥',
+          'machine': '農機代耕',
+          'shipping': '包裝物流'
+        },
+        services: {
+          'assessment': '財評',
+          'loan': '農貸'
         }
       }
     }
@@ -87,6 +110,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .village {
-        background-image: url('/src/assets/village/bg.png');
+        background-image: url('/src/assets/village/store-bg.png');
     }
 </style>

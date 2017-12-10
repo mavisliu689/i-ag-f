@@ -1,6 +1,7 @@
 <template>
 
     <div class="village">
+        <div class="mask"></div>
         <div class="village-header bg-complete-darker">
             <div class="container-fluid">
                 <div class="row">
@@ -46,25 +47,36 @@
                 </div>
             </div>
         </div>
-        <div class="village-npc">
-            <img src="src/assets/village/npc.png" alt="npc">
-        </div>
-        <div class="village-buttons">
-            <ul class="list-unstyled container-fluid">
-                <li v-for="(button, index) in buttons" class="village-button row">
-                    <router-link :to="'/' + index">
-                        <div class="col-xs-4">
-                            <div class="row">
-                                <div class="village-book pull-left"></div>
+        <div class="store">
+            <div class="container">
+                <div class="row store-item" v-for="(land, index) in lands">
+                    <div class="col-xs-4">
+                        <img src="src/assets/village/land.png" alt="land" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="row">
+                            <div class="name">
+                                {{ land.name }}
+                            </div>
+                            <div class="info p-t-10">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        {{ land.ping }}
+                                    </div>
+                                    <div class="col-xs-6">
+                                        {{ land.price }}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-8">
-                            {{ button }}
-                        </div>
-                    </router-link>
-                </li>
-            </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="village-npc">
+            <img src="src/assets/village/store-npc.png" alt="npc">
+        </div>
+        <router-link to="/store" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -74,10 +86,32 @@
     name: 'Village',
     data () {
       return {
-        buttons: {
-          'emergency': '緊急任務',
-          'normal': '一般任務',
-          'store': '商城銀行'
+        lands: {
+          '1': {
+            'name': '竹山山坡地1',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '2': {
+            'name': '竹山山坡地2',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '3': {
+            'name': '竹山山坡地3',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '4': {
+            'name': '竹山山坡地4',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '5': {
+            'name': '竹山山坡地5',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          }
         }
       }
     }
@@ -87,6 +121,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .village {
-        background-image: url('/src/assets/village/bg.png');
+        background-image: url('/src/assets/village/store-bg.png');
     }
 </style>

@@ -1,6 +1,7 @@
 <template>
 
     <div class="village">
+        <div class="mask"></div>
         <div class="village-header bg-complete-darker">
             <div class="container-fluid">
                 <div class="row">
@@ -46,25 +47,29 @@
                 </div>
             </div>
         </div>
-        <div class="village-npc">
-            <img src="src/assets/village/npc.png" alt="npc">
-        </div>
-        <div class="village-buttons">
-            <ul class="list-unstyled container-fluid">
-                <li v-for="(button, index) in buttons" class="village-button row">
-                    <router-link :to="'/' + index">
-                        <div class="col-xs-4">
-                            <div class="row">
-                                <div class="village-book pull-left"></div>
+        <div class="store">
+            <div class="container">
+                <div class="row store-item" v-for="(seedling, index) in seedlings">
+                    <div class="col-xs-4">
+                        <img src="src/assets/village/seedling.jpg" alt="seedling" class="img-responsive" height="60">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="row">
+                            <div class="name">
+                                {{ seedling.name }}
+                            </div>
+                            <div class="info p-t-10">
+                                {{ seedling.cycle }} / {{ seedling.period }}
                             </div>
                         </div>
-                        <div class="col-xs-8">
-                            {{ button }}
-                        </div>
-                    </router-link>
-                </li>
-            </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="village-npc">
+            <img src="src/assets/village/store-npc.png" alt="npc">
+        </div>
+        <router-link to="/store" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -74,10 +79,32 @@
     name: 'Village',
     data () {
       return {
-        buttons: {
-          'emergency': '緊急任務',
-          'normal': '一般任務',
-          'store': '商城銀行'
+        seedlings: {
+          '1': {
+            'name': '小白菜1',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '2': {
+            'name': '小白菜2',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '3': {
+            'name': '小白菜3',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '4': {
+            'name': '小白菜4',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '5': {
+            'name': '小白菜5',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          }
         }
       }
     }
@@ -87,6 +114,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .village {
-        background-image: url('/src/assets/village/bg.png');
+        background-image: url('/src/assets/village/store-bg.png');
     }
 </style>
