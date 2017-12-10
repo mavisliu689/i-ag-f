@@ -54,7 +54,14 @@
                         <img src="src/assets/village/seedling.jpg" alt="seedling" class="img-responsive" height="60">
                     </div>
                     <div class="col-xs-8">
-                        {{ seedling }}
+                        <div class="row">
+                            <div class="name">
+                                {{ seedling.name }}
+                            </div>
+                            <div class="info p-t-10">
+                                {{ seedling.cycle }} / {{ seedling.period }}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,11 +80,31 @@
     data () {
       return {
         seedlings: {
-          '1': '小白菜1',
-          '2': '小白菜2',
-          '3': '小白菜3',
-          '4': '小白菜4',
-          '5': '小白菜5'
+          '1': {
+            'name': '小白菜1',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '2': {
+            'name': '小白菜2',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '3': {
+            'name': '小白菜3',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '4': {
+            'name': '小白菜4',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          },
+          '5': {
+            'name': '小白菜5',
+            'cycle': '農作物週期',
+            'period': '建議播種期'
+          }
         }
       }
     }

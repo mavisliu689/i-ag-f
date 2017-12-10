@@ -54,16 +54,18 @@
                         <img src="src/assets/village/land.png" alt="land" class="img-responsive">
                     </div>
                     <div class="col-xs-8">
-                        <div class="land">
-                            {{ land.name }}
-                        </div>
-                        <div class="info p-t-10">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    {{ land.ping }}
-                                </div>
-                                <div class="col-xs-6">
-                                    {{ land.price }}
+                        <div class="row">
+                            <div class="name">
+                                {{ land.name }}
+                            </div>
+                            <div class="info p-t-10">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        {{ land.ping }}
+                                    </div>
+                                    <div class="col-xs-6">
+                                        {{ land.price }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
