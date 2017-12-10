@@ -54,7 +54,19 @@
                         <img src="src/assets/village/land.png" alt="land" class="img-responsive">
                     </div>
                     <div class="col-xs-8">
-                        {{ land }}
+                        <div class="land">
+                            {{ land.name }}
+                        </div>
+                        <div class="info p-t-10">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    {{ land.ping }}
+                                </div>
+                                <div class="col-xs-6">
+                                    {{ land.price }}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,11 +85,31 @@
     data () {
       return {
         lands: {
-          '1': '竹山山坡地1',
-          '2': '竹山山坡地2',
-          '3': '竹山山坡地3',
-          '4': '竹山山坡地4',
-          '5': '竹山山坡地5'
+          '1': {
+            'name': '竹山山坡地1',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '2': {
+            'name': '竹山山坡地2',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '3': {
+            'name': '竹山山坡地3',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '4': {
+            'name': '竹山山坡地4',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          },
+          '5': {
+            'name': '竹山山坡地5',
+            'ping': '1435坪',
+            'price': '6萬/坪'
+          }
         }
       }
     }
