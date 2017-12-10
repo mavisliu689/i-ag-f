@@ -1,6 +1,7 @@
 <template>
 
     <div class="village">
+        <div class="mask"></div>
         <div class="village-header bg-complete-darker">
             <div class="container-fluid">
                 <div class="row">

@@ -7,6 +7,7 @@ import Village from '@/components/Village'
 import Store from '@/components/Store'
 import Land from '@/components/Land'
 import Seedling from '@/components/Seedling'
+import Fertilizer from '@/components/Fertilizer'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/seedling',
       name: 'Seedling',
       component: Seedling
+    },
+    {
+      path: '/fertilizer',
+      name: 'Fertilizer',
+      component: Fertilizer
     }
   ]
 })

@@ -43,12 +43,16 @@
         </div>
         <div class="store">
             <div class="container">
-                <div class="row store-item" v-for="(seedling, index) in seedlings">
-                    <div class="col-xs-4">
-                        <img src="src/assets/village/seedling.jpg" alt="seedling" class="img-responsive" height="60">
-                    </div>
-                    <div class="col-xs-8">
-                        {{ seedling }}
+                <div class="row fertilizer-item" v-for="(fertilizer, index) in fertilizers">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="fertilizer-name">
+                                {{ fertilizer.name }}
+                            </div>
+                        </div>
+                        <div class="fertilizer-phone">
+                            {{ fertilizer.phone }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,12 +70,27 @@
     name: 'Village',
     data () {
       return {
-        seedlings: {
-          '1': '小白菜1',
-          '2': '小白菜2',
-          '3': '小白菜3',
-          '4': '小白菜4',
-          '5': '小白菜5'
+        fertilizers: {
+          '1': {
+            'name': '建鋐農藥行1',
+            'phone': '049-2622262'
+          },
+          '2': {
+            'name': '建鋐農藥行2',
+            'phone': '049-2622262'
+          },
+          '3': {
+            'name': '建鋐農藥行3',
+            'phone': '049-2622262'
+          },
+          '4': {
+            'name': '建鋐農藥行4',
+            'phone': '049-2622262'
+          },
+          '5': {
+            'name': '建鋐農藥行5',
+            'phone': '049-2622262'
+          }
         }
       }
     }
