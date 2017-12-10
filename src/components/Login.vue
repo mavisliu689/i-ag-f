@@ -7,12 +7,12 @@
             <div class="container container-fixed-lg">
                 <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
-                <div class="login-container bg-white">
+                <div class="login-container">
                     <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 p-b-50 m-b-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
                         <!-- START Login Form -->
                         <!-- START Form Control-->
                         <div class="form-group form-group-default">
-                            <label class="fade">Account</label>
+                            <label>Account</label>
                             <div class="controls">
                                 <input type="text" name="username" placeholder="帳號" class="form-control" required=""
                                        aria-required="true" aria-invalid="false">
@@ -21,7 +21,7 @@
                         <!-- END Form Control-->
                         <!-- START Form Control-->
                         <div class="form-group form-group-default">
-                            <label class="fade">Password</label>
+                            <label>Password</label>
                             <div class="controls">
                                 <input type="password" class="form-control" name="password" placeholder="密碼" required=""
                                        aria-required="true" aria-invalid="false">

@@ -27,6 +27,22 @@ p {
 .home img {
   margin: 0 auto;
 }
+.form-group,
+.select2-container--default .select2-selection--single,
+.form-control {
+  background-color: #121212;
+  color: #FAFAFA;
+}
+.form-group.focused,
+.select2-container--default .select2-selection--single.focused,
+.form-control.focused {
+  color: #0A0A0A;
+}
+.form-group.focused .form-control,
+.select2-container--default .select2-selection--single.focused .form-control,
+.form-control.focused .form-control {
+  color: #0A0A0A;
+}
 .village {
   background: url('/src/assets/village/bg.png') center center no-repeat;
   background-size: cover;

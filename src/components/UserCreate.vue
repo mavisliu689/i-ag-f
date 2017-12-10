@@ -7,7 +7,7 @@
             <div class="container container-fixed-lg">
                 <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
-                <div class="register-container full-height sm-p-t-30 bg-white">
+                <div class="register-container full-height sm-p-t-30">
                     <div class="container-sm-height full-height">
                         <div class="row row-sm-height">
                             <div class="col-sm-12 col-sm-height col-middle">
@@ -34,7 +34,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group form-group-default form-group-default-select2 required">
                                             <label class="">選擇起始縣市</label>
-                                            <select name="city" class="full-width" data-placeholder="Select City"
+                                            <select name="city" class="full-width form-control" data-placeholder="Select City"
                                                     data-init-plugin="select2" required="true">
                                                 <option></option>
                                                 <option value="基隆市">基隆市</option>

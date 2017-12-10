@@ -37,6 +37,21 @@ p {
   }
 }
 
+.form-group,
+.select2-container--default .select2-selection--single,
+.form-control {
+  background-color: #121212;
+  color: #FAFAFA;
+
+  &.focused {
+    color: #0A0A0A;
+
+    .form-control {
+      color: #0A0A0A;
+    }
+  }
+}
+
 .village {
   background: url('/src/assets/village/bg.png') center center no-repeat;
   background-size: cover;
