@@ -42,7 +42,7 @@
         </div>
         <div class="store">
             <div class="container">
-                <div class="row land-item" v-for="(land, index) in lands">
+                <div class="row store-item" v-for="(land, index) in lands">
                     <div class="col-xs-4">
                         <img src="src/assets/village/land.png" alt="land" class="img-responsive">
                     </div>
