@@ -102,6 +102,7 @@
   padding: 10px 0;
   margin-bottom: 10px;
   color: #FAFAFA;
+  border-radius: 10px 0 0 10px;
 }
 .village .store .store-item .name {
   font-size: 24px;
@@ -117,6 +118,7 @@
 }
 .village .store .fertilizer-item .fertilizer-name {
   background-color: #2B6A94;
+  border-radius: 10px 0 0 10px;
   padding: 15px;
   font-size: 26px;
   color: #FAFAFA;
