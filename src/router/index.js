@@ -5,6 +5,7 @@ import Login from '@/components/Login'
 import UserCreate from '@/components/UserCreate'
 import Village from '@/components/Village'
 import Store from '@/components/Store'
+import Land from '@/components/Land'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/store',
       name: 'Store',
       component: Store
+    },
+    {
+      path: '/land',
+      name: 'Land',
+      component: Land
     }
   ]
 })

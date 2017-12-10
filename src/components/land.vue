@@ -40,25 +40,22 @@
                 </div>
             </div>
         </div>
+        <div class="store">
+            <div class="container">
+                <div class="row land-item" v-for="(land, index) in lands">
+                    <div class="col-xs-4">
+                        <img src="src/assets/village/land.png" alt="land" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8">
+                        {{ land }}
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="village-npc">
-            <img src="src/assets/village/npc.png" alt="npc">
+            <img src="src/assets/village/store-npc.png" alt="npc">
         </div>
-        <div class="village-buttons">
-            <ul class="list-unstyled container-fluid">
-                <li v-for="(button, index) in buttons" class="village-button row">
-                    <router-link :to="'/' + index">
-                        <div class="col-xs-4">
-                            <div class="row">
-                                <div class="village-book pull-left"></div>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            {{ button }}
-                        </div>
-                    </router-link>
-                </li>
-            </ul>
-        </div>
+        <router-link to="/store" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -68,10 +65,12 @@
     name: 'Village',
     data () {
       return {
-        buttons: {
-          'emergency': '緊急任務',
-          'normal': '一般任務',
-          'store': '商城銀行'
+        lands: {
+          '1': '竹山山坡地1',
+          '2': '竹山山坡地2',
+          '3': '竹山山坡地3',
+          '4': '竹山山坡地4',
+          '5': '竹山山坡地5'
         }
       }
     }
@@ -81,6 +80,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .village {
-        background-image: url('/src/assets/village/bg.png');
+        background-image: url('/src/assets/village/store-bg.png');
     }
 </style>

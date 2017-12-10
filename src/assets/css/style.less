@@ -94,8 +94,35 @@
   .village-book {
     width: 30px;
     height: 30px;
-    background: #3C93CE url(../village/book.png) center center no-repeat;
+    background: #3C93CE url("../village/book.png") center center no-repeat;
     background-size: 80%;
     border-radius: 100%;
   }
+
+  .store {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 130px;
+    height: 240px;
+    overflow: auto;
+
+    .land-item {
+      background-color: #2B6A94;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      color: #FAFAFA;
+      font-size: 20px;
+    }
+  }
+}
+
+.back-btn {
+  width: 30px;
+  height: 30px;
+  background: url("../village/previous.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }

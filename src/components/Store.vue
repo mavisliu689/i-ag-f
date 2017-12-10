@@ -75,6 +75,7 @@
                 </li>
             </ul>
         </div>
+        <router-link to="/village" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -103,8 +104,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .village {
-        background: url('/src/assets/village/store-bg.png') center center no-repeat;
-        background-size: cover;
-        min-height: 100vh;
+        background-image: url('/src/assets/village/store-bg.png');
     }
 </style>
