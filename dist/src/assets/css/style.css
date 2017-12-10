@@ -3,16 +3,18 @@
 * Override Pages default styles or create your own styles here
 
 */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .footer {
   color: #FAFAFA;
 }
 .page-container {
   padding-left: 0;
 }
-.home {
-  margin-top: 20vh;
-}
 .home .logo-img {
+  margin-top: 20vh;
   max-width: 50vw;
 }
 .home .title-img {
@@ -31,6 +33,7 @@
   color: #FAFAFA;
   padding: 10px;
   font-size: 16px;
+  position: relative;
 }
 .village .village-npc {
   position: absolute;
@@ -41,22 +44,111 @@
   position: absolute;
   right: 0;
   bottom: 50px;
+  width: 180px;
 }
 .village .village-buttons .village-button {
   background-color: #2B6A94;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 5px;
   border-radius: 30px 0 0 30px;
 }
 .village .village-buttons .village-button a {
   font-size: 16px;
   color: #FAFAFA;
+  width: 100%;
+}
+.village .village-buttons .village-button .col-xs-8 {
+  padding-top: 3px;
+}
+.village .village-services {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  width: 130px;
+}
+.village .village-services .village-service {
+  background-color: #2B6A94;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 0 30px 30px 0;
+}
+.village .village-services .village-service a {
+  font-size: 16px;
+  color: #FAFAFA;
+  width: 100%;
+}
+.village .village-services .village-service .col-xs-8 {
+  padding-top: 3px;
 }
 .village .village-book {
   width: 30px;
   height: 30px;
-  background: #3C93CE url(../village/book.png) center center no-repeat;
+  background: #3C93CE url("../village/book.png") center center no-repeat;
   background-size: 80%;
   border-radius: 100%;
+}
+.village .store {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  top: 130px;
+  height: 230px;
+  overflow: auto;
+}
+.village .store .store-item {
+  background-color: #2B6A94;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: #FAFAFA;
+  border-radius: 10px 0 0 10px;
+}
+.village .store .store-item .name {
+  font-size: 24px;
+}
+.village .store .store-item .info {
+  font-size: 16px;
+}
+.village .store .store-item img {
+  max-height: 50px;
+}
+.village .store .fertilizer-item {
+  margin-bottom: 10px;
+}
+.village .store .fertilizer-item .fertilizer-name {
+  background-color: #2B6A94;
+  border-radius: 10px 0 0 10px;
+  padding: 15px;
+  font-size: 26px;
+  color: #FAFAFA;
+}
+.village .store .fertilizer-item .fertilizer-phone {
+  font-size: 20px;
+  padding: 10px 0 0;
+  color: #0A0A0A;
+}
+.village .video {
+  width: 280px;
+  height: 280px;
+  margin: 30px auto 0;
+  background: url("../village/video-bg.png") center center no-repeat;
+  background-size: contain;
+}
+.village .mask {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.back-btn {
+  width: 30px;
+  height: 30px;
+  background: url("../village/previous.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
