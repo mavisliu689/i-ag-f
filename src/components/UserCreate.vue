@@ -72,13 +72,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row m-t-10">
-                                    <div class="col-md-6">
-                                        <p>I agree to the <a href="#" class="text-info small">Pages Terms</a> and <a href="#"
-                                                                                                                     class="text-info small">Privacy</a>.
-                                        </p>
-                                    </div>
-                                </div>
                                 <button class="btn btn-primary btn-cons m-t-10" type="button" @click="createUser">創建角色</button>
                             </div>
                         </div>

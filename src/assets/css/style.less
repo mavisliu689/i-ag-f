@@ -3,6 +3,12 @@
 * Override Pages default styles or create your own styles here
 
 */
+
+p {
+  color: #0A0A0A;
+  font-size: 16px;
+}
+
 .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
@@ -114,7 +120,7 @@
     right: 0;
     top: 130px;
     height: 230px;
-    overflow: auto;
+    overflow-x: hidden;
 
     .store-item {
       background-color: #2B6A94;
@@ -159,8 +165,14 @@
     width: 280px;
     height: 280px;
     margin: 30px auto 0;
+    padding: 80px 20px 0;
     background: url("../village/video-bg.png") center center no-repeat;
     background-size: contain;
+  }
+
+  .intro {
+    padding: 0 50px;
+    position: relative;
   }
 
   .mask {

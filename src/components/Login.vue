@@ -9,7 +9,6 @@
 
                 <div class="login-container bg-white">
                     <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 p-b-50 m-b-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-                        <p class="p-t-35">Sign into your account</p>
                         <!-- START Login Form -->
                         <!-- START Form Control-->
                         <div class="form-group form-group-default">
