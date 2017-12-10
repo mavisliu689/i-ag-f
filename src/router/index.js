@@ -11,6 +11,7 @@ import Fertilizer from '@/components/Fertilizer'
 import Machine from '@/components/Machine'
 import Shipping from '@/components/Shipping'
 import Normal from '@/components/Normal'
+import Step1 from '@/components/Step1'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/normal',
       name: 'Normal',
       component: Normal
+    },
+    {
+      path: '/normal/step1',
+      name: 'Step1',
+      component: Step1
     }
   ]
 })

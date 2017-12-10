@@ -1,6 +1,7 @@
 <template>
 
     <div class="village">
+        <div class="mask"></div>
         <div class="village-header bg-complete-darker">
             <div class="container-fluid">
                 <div class="row">
@@ -46,42 +47,24 @@
                 </div>
             </div>
         </div>
+        <div class="video">
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" :src="'https://www.youtube.com/embed/' + step.video" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="container">
+                <p>
+                    {{ step.intro }}
+                </p>
+            </div>
+        </div>
         <div class="village-npc">
             <img src="src/assets/village/normal-npc.png" alt="npc">
         </div>
-        <div class="village-services">
-            <ul class="list-unstyled container-fluid">
-                <li v-for="(service, index) in services" class="village-service row">
-                    <router-link :to="'/' + index">
-                        <div class="col-xs-8">
-                            {{ service }}
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="row">
-                                <div class="village-book pull-right"></div>
-                            </div>
-                        </div>
-                    </router-link>
-                </li>
-            </ul>
-        </div>
-        <div class="village-buttons">
-            <ul class="list-unstyled container-fluid">
-                <li v-for="(button, index) in buttons" class="village-button row">
-                    <router-link :to="'/' + index">
-                        <div class="col-xs-4">
-                            <div class="row">
-                                <div class="village-book pull-left"></div>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            {{ button }}
-                        </div>
-                    </router-link>
-                </li>
-            </ul>
-        </div>
-        <router-link to="/village" class="back-btn"></router-link>
+        <router-link to="/normal" class="back-btn"></router-link>
     </div>
 
 </template>
@@ -91,17 +74,9 @@
     name: 'Village',
     data () {
       return {
-        buttons: {
-          'normal/step1': '翻土',
-          'normal/step2': '開溝',
-          'normal/step3': '育苗',
-          'normal/step4': '播種',
-          'normal/step8': '採收'
-        },
-        services: {
-          'normal/step5': '淹水',
-          'normal/step6': '除蟲',
-          'normal/step7': '施肥'
+        'step': {
+          'video': '7ZGW_T-UqZ0',
+          'intro': '需翻土兩次，目的是將有機質打成細小狀態，方便快速分解釋放養分到農田'
         }
       }
     }
